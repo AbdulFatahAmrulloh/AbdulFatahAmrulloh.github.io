@@ -8,12 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-
----
-
-**ABDUL FATAH AMRULLOH**
-*Abdulfatah2660502@gmail.com | (+62) 85135090075 | [LinkedIn](https://www.linkedin.com/in/abdulfattahamrulloh/)*
-
 ## About Me
 
 I am a passionate technology enthusiast and a graduate of Bachelor's Degree in Telecommunication Engineering from Telkom University. My interests lie in Internet of Things (IoT), Adaptive Networks, and smart network simulation. With experience in developing projects based on ad-hoc vehicle networks (VANET) and utilizing various simulation platforms and web development, I am dedicated to solving complex technical challenges through collaboration, communication, and creativity.
