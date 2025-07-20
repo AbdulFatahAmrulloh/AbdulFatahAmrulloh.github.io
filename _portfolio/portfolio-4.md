@@ -1,6 +1,6 @@
 ---
 title: "Smart Poultry Monitoring System (SMAJA)"
-excerpt: "A mobile user interface design for poultry investment and monitoring, built for Android platforms. <br/><img src='/images/P42.png'>"
+excerpt: "A mobile user interface design for poultry investment and monitoring, built for Android platforms. <br/><img src='/images/p42.png'>"
 collection: portfolio
 ---
 
