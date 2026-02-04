@@ -1,6 +1,6 @@
 ---
 title: "Technical Operation Support Shift Schedule Website"
-excerpt: "A web-based internal system for managing and displaying real-time crew shift schedules, built with PHP, JavaScript, CSS, and Python. <br/><img src='/images/shift_schedule_2.png.png' alt='Technical Operation Support Shift Schedule Website'>"
+excerpt: "A web-based internal system for managing and displaying real-time crew shift schedules, built with PHP, JavaScript, CSS, and Python. <br/><img src='/images/shift_schedule_2.png.png'>"
 collection: portfolio
 ---
 
@@ -40,6 +40,7 @@ This system aims to:
 - Serve as a scalable foundation for future operational support tools
 
 <img src='/images/shift_schedule_2.png.png' alt='Technical Operation Support Shift Schedule Website'>
+
 
 
 
