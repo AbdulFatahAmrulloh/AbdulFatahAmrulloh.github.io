@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-[Download my CV here](https://AbdulFatahAmrulloh.github.io/files/CV.pdf)
+[Download my CV here](https://AbdulFatahAmrulloh.github.io/files/Resume.pdf)
 
 ---
 
