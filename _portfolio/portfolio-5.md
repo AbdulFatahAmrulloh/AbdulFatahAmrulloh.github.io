@@ -39,5 +39,6 @@ This system aims to:
 - Improve operational coordination through real-time and accurate schedule data  
 - Serve as a scalable foundation for future operational support tools
 
-<img src='/images/shift_schedule_2.png' alt='Technical Operation Support Shift Schedule Website'>
+<img src='/images/shift_schedule_2.png.png' alt='Technical Operation Support Shift Schedule Website'>
+
 
