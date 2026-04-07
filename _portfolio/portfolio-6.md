@@ -58,5 +58,5 @@ The platform is scalable and can be further developed into a fully integrated op
 <img src='/images/603.png'>
 <img src='/images/604.png'>
 <img src='/images/605.png'>
-<img src='/images/606.png'>
-<img src='/images/607.png'>
+<img src='/images/606.PNG'>
+<img src='/images/607.PNG'>
