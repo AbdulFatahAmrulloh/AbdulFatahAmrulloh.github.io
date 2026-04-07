@@ -40,7 +40,7 @@ This system aims to:
 - Serve as a scalable foundation for future operational support tools
 
 <img src='/images/501.png' alt='Technical Operation Support Shift Schedule Website'>
-<img src='/images/501.png'>
+<img src='/images/502.png'>
 
 
 
