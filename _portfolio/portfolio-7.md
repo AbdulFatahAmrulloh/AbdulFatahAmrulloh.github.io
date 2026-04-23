@@ -1,193 +1,78 @@
 ---
-title: "Android Live Streaming App (StreamPack Integration) - Mobile SRT Broadcaster"
-excerpt: "A production-ready Android live streaming application built with StreamPack library, supporting SRT protocol for low-latency video broadcasting. Successfully deployed in real-world production environment.<br/><img src='/images/srt-streaming-preview-main.jpg'>"
+title: "AI YouTube Auto Cutter & Smart Framing System"
+excerpt: "A web-based system for automatically cutting long YouTube videos into short vertical clips with intelligent face tracking and framing. <br/><img src='/images/701.png'>"
 collection: portfolio
 ---
 
-This project showcases a **production-ready mobile live streaming application** developed for Android devices using the **[StreamPack library](https://github.com/ThibaultBee/StreamPack)**. The system enables real-time video broadcasting with **low-latency SRT (Secure Reliable Transport)** protocol, making it ideal for professional broadcasting environments, live reporting, studio monitoring, and mobile journalism.
+This project presents a full-stack web application designed to automate the process of converting long-form YouTube videos into short, engaging vertical clips (9:16) suitable for platforms like TikTok, Reels, and Shorts.
 
-The application has been **successfully implemented and used in real-world production**, demonstrating its reliability, stability, and performance in actual broadcasting scenarios.
+The system integrates AI-based face detection and smart cropping to ensure that the main speaker remains the focus throughout the video, even when multiple people are present.
 
----
+## Key Features
 
-## 📱 Application Overview
+- **YouTube Video Integration**  
+  Users can directly input a YouTube URL, and the system will load and process the video automatically.
 
-<div style="text-align: center; margin: 20px 0;">
-  <img src="/images/srt-streaming-preview-main.jpg" alt="Live Streaming Preview Main Interface" style="width: 100%; max-width: 800px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <p style="color: #666; font-size: 0.9rem; margin-top: 8px;">Main interface – Live streaming control panel</p>
-</div>
+- **Automatic Video Cutting (Batch Processing)**  
+  Splits long videos into multiple short clips (e.g., 90 seconds each) with batch processing support.
 
-This Android application allows users to capture and stream video directly from their mobile devices to any SRT-compatible server, transforming Android devices into professional broadcasting tools.
+- **Smart Face Tracking & Framing**  
+  Uses AI to detect and follow the active speaker’s face, ensuring proper focus in vertical format (9:16).
 
----
+- **Multiple Aspect Ratio Support**  
+  Supports various output formats:
+  - Landscape (16:9)
+  - Vertical / Story (9:16)
+  - Square (1:1)
+  - Tall Feed (4:5)
 
-## 🚀 Key Features
+- **Real-Time Processing Status**  
+  Displays system status such as:
+  - Live
+  - Recording
+  - Capturing
+  - Processing
+  - Finished
 
-### 🎥 Real-Time Video Streaming
-- Live video capture from Android camera  
-- Low-latency streaming with SRT protocol  
-- Stable transmission optimized for mobile networks (4G/5G/Wi-Fi)  
-- Production-ready performance  
+- **Recent Recording History**  
+  Shows recently processed video clips for quick access and monitoring.
 
-<div style="margin: 20px 0;">
-  <img src="/images/srt-streaming-live-view.jpg" alt="Live Streaming View Interface" style="width: 100%; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <p style="color: #666; font-size: 0.9rem; text-align: center; margin-top: 8px;">Live streaming view – Real-time monitoring</p>
-</div>
+- **Downloadable Output Clips**  
+  Users can easily download generated clips after processing is completed.
 
----
+## Technologies Used
 
-### ⚙️ Advanced Encoder Configuration
+- **Backend**: Python (Video processing, AI detection), PHP (API & server logic)  
+- **Frontend**: HTML, CSS, JavaScript  
+- **Video Processing**: FFmpeg  
+- **AI Processing**: OpenCV (Face Detection & Tracking)  
+- **Integration**: YouTube API  
+- **UI Design**: Custom dashboard interface  
 
-| Setting | Value |
-|---------|-------|
-| Encoder | H.264 / AVC |
-| Resolution | 1280x720 (HD Ready) |
-| Frame Rate | 30 fps |
-| Profile | High |
-| Level | 5.2 |
-| Bitrate | Adjustable |
+## System Workflow
 
-<div style="margin: 20px 0;">
-  <img src="/images/srt-streaming-video-settings.jpg" alt="Video Configuration Settings" style="width: 100%; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <p style="color: #666; font-size: 0.9rem; text-align: center; margin-top: 8px;">Video encoder configuration panel</p>
-</div>
+1. User inputs YouTube link  
+2. System loads video metadata  
+3. User selects:
+   - Start time
+   - End time
+   - Clip duration  
+4. AI processes video:
+   - Detect faces
+   - Track active speaker  
+5. Video is automatically split into segments  
+6. Output clips are generated in selected aspect ratio  
+7. User downloads results  
 
----
+## Outcome
 
-### 🔊 Professional Audio Streaming
+This system helps:
+- Automate content repurposing for social media  
+- Save time in manual video editing  
+- Improve engagement through smart framing  
+- Enable scalable short-form content production  
 
-| Setting | Value |
-|---------|-------|
-| Encoder | AAC (Advanced Audio Coding) |
-| Channels | Stereo |
-| Bitrate | 128 Kbps |
-| Sample Rate | 44.1 kHz |
-| Byte Format | 16-bit |
-| Profile | Low-Complexity (LC) |
+## Interface Preview
 
-<div style="margin: 20px 0;">
-  <img src="/images/srt-streaming-audio-settings.jpg" alt="Audio Configuration Settings" style="width: 100%; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <p style="color: #666; font-size: 0.9rem; text-align: center; margin-top: 8px;">Audio encoder configuration panel</p>
-</div>
-
----
-
-### 🌐 SRT Protocol Integration (StreamPack)
-
-| Parameter | Value |
-|-----------|-------|
-| Protocol | SRT (Secure Reliable Transport) |
-| Mode | Caller |
-| Endpoint | `srt://[IP]:[PORT]?mode=caller` |
-| Features | Secure & reliable over unpredictable networks |
-
-<div style="margin: 20px 0;">
-  <img src="/images/srt-streaming-srt-config.jpg" alt="SRT Protocol Configuration" style="width: 100%; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <p style="color: #666; font-size: 0.9rem; text-align: center; margin-top: 8px;">SRT server configuration – Endpoint settings</p>
-</div>
-
----
-
-### 📱 Real-Time Control Interface
-- One-tap Start/Stop streaming  
-- Live preview monitoring  
-- Camera switching (front/back)  
-- Zoom control  
-- Real-time status indicators (connection, bitrate, latency)  
-
----
-
-## 🛠 Technologies Used
-
-<div style="display: flex; flex-wrap: wrap; gap: 16px; margin: 20px 0;">
-  <div style="flex: 1; min-width: 200px; background: #f8f9fa; padding: 16px; border-radius: 12px; border-left: 4px solid #667eea;">
-    <strong>📱 Mobile Platform</strong><br>Android (Java/Kotlin)
-  </div>
-  <div style="flex: 1; min-width: 200px; background: #f8f9fa; padding: 16px; border-radius: 12px; border-left: 4px solid #667eea;">
-    <strong>📚 Streaming Library</strong><br><a href="https://github.com/ThibaultBee/StreamPack" target="_blank">StreamPack</a>
-  </div>
-  <div style="flex: 1; min-width: 200px; background: #f8f9fa; padding: 16px; border-radius: 12px; border-left: 4px solid #667eea;">
-    <strong>🎬 Video Codec</strong><br>H.264 / AVC
-  </div>
-  <div style="flex: 1; min-width: 200px; background: #f8f9fa; padding: 16px; border-radius: 12px; border-left: 4px solid #667eea;">
-    <strong>🔊 Audio Codec</strong><br>AAC-LC
-  </div>
-  <div style="flex: 1; min-width: 200px; background: #f8f9fa; padding: 16px; border-radius: 12px; border-left: 4px solid #667eea;">
-    <strong>🌐 Streaming Protocol</strong><br>SRT (Secure Reliable Transport)
-  </div>
-  <div style="flex: 1; min-width: 200px; background: #f8f9fa; padding: 16px; border-radius: 12px; border-left: 4px solid #667eea;">
-    <strong>📡 Network</strong><br>4G/5G/Wi-Fi
-  </div>
-</div>
-
----
-
-## 🔄 System Workflow
-
-1. **Launch Android App**  
-2. **Configure Streaming Parameters**  
-   - Video resolution & bitrate  
-   - Audio bitrate & channels  
-   - SRT server IP & port  
-3. **Connect to SRT Server**  
-4. **Start Live Streaming**  
-5. **Real-time Encoding** (H.264 + AAC)  
-6. **SRT Packet Transmission**  
-7. **Server Receives & Distributes Stream**  
-
----
-
-## 🎯 Production Outcome
-
-This application delivers:
-
-- ✅ **Professional-grade live streaming** from Android devices  
-- ✅ **Low-latency transmission** using SRT protocol  
-- ✅ **Portable broadcasting solution** eliminating heavy equipment  
-- ✅ **Seamless integration** with existing broadcast infrastructure  
-- ✅ **Proven reliability** in actual production environments  
-
-**Use Cases:**  
-📺 TV News & Live Reporting · 🎪 Event Broadcasting · 🏟 Sports Coverage · 📡 Remote Studio Monitoring · 🚁 Mobile Journalism (MoJo)
-
----
-
-## 🖼 Complete Interface Gallery
-
-<div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin: 20px 0;">
-  <div style="flex: 1; min-width: 200px;">
-    <img src="/images/srt-streaming-preview-main.jpg" alt="Main Preview" style="width: 100%; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <p style="text-align: center; font-size: 0.8rem;">Main Preview</p>
-  </div>
-  <div style="flex: 1; min-width: 200px;">
-    <img src="/images/srt-streaming-live-view.jpg" alt="Live View" style="width: 100%; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <p style="text-align: center; font-size: 0.8rem;">Live View</p>
-  </div>
-  <div style="flex: 1; min-width: 200px;">
-    <img src="/images/srt-streaming-video-settings.jpg" alt="Video Settings" style="width: 100%; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <p style="text-align: center; font-size: 0.8rem;">Video Settings</p>
-  </div>
-</div>
-
-<div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin: 20px 0;">
-  <div style="flex: 1; min-width: 200px;">
-    <img src="/images/srt-streaming-audio-settings.jpg" alt="Audio Settings" style="width: 100%; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <p style="text-align: center; font-size: 0.8rem;">Audio Settings</p>
-  </div>
-  <div style="flex: 1; min-width: 200px;">
-    <img src="/images/srt-streaming-srt-config.jpg" alt="SRT Config" style="width: 100%; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <p style="text-align: center; font-size: 0.8rem;">SRT Configuration</p>
-  </div>
-</div>
-
----
-
-## 📚 References
-
-- [StreamPack Library](https://github.com/ThibaultBee/StreamPack) – Android streaming library used in this project  
-- [SRT Alliance](https://www.srtalliance.org/) – Secure Reliable Transport protocol  
-- [Android Camera2 API](https://developer.android.com/training/camera2) – Camera implementation  
-
----
-
-> **Status:** ✅ Production Ready – Successfully deployed in live broadcasting environment
+<img src='/images/701.png' alt='AI Video Cutter Interface Preview'>
+ 
