@@ -1,6 +1,6 @@
 ---
 title: "Android Live Streaming SRT App (StreamPack Integration)"
-excerpt: "A mobile-based live streaming application built on Android using StreamPack, supporting low-latency SRT streaming with real-time video encoding and transmission. <br/><img src='/images/preview_main.png'>"
+excerpt: "A mobile-based live streaming application built on Android using StreamPack, supporting low-latency SRT streaming with real-time video encoding and transmission. <br/><img src='/images/projects/srt-streaming/srt-streaming-preview-main.jpg'>"
 collection: portfolio
 ---
 
@@ -12,7 +12,7 @@ The application has been **successfully implemented and used in a real-world pro
 
 ## 📱 Application Overview
 
-<img src="/images/preview_main.png" alt="Live Streaming Preview" style="width:100%; border-radius:10px; margin-bottom:20px;">
+<img src="/images/projects/srt-streaming/srt-streaming-preview-main.jpg" alt="Live Streaming Preview" style="width:100%; border-radius:10px; margin-bottom:20px;">
 
 This app allows users to capture video directly from an Android device and stream it to a remote server using the **SRT (Secure Reliable Transport)** protocol.
 
@@ -25,7 +25,7 @@ This app allows users to capture video directly from an Android device and strea
 - Smooth streaming with low latency  
 - Optimized for stable transmission in local or network environments  
 
-<img src="/images/preview_streaming.jpg" alt="Streaming Activity" style="width:100%; border-radius:10px; margin:20px 0;">
+<img src="/images/projects/srt-streaming/srt-streaming-live-view.jpg" alt="Streaming Activity" style="width:100%; border-radius:10px; margin:20px 0;">
 
 ---
 
@@ -35,8 +35,8 @@ This app allows users to capture video directly from an Android device and strea
 - Frame Rate: 30 FPS  
 - Adjustable Bitrate for network optimization  
 
-<img src="/images/preview_video_settings.jpg" alt="Video Settings" style="width:48%; margin-right:2%; border-radius:10px;">
-<img src="/images/preview_audio_settings.jpg" alt="Audio Settings" style="width:48%; border-radius:10px;">
+<img src="/images/projects/srt-streaming/srt-streaming-video-settings.jpg" alt="Video Settings" style="width:48%; margin-right:2%; border-radius:10px;">
+<img src="/images/projects/srt-streaming/srt-streaming-audio-settings.jpg" alt="Audio Settings" style="width:48%; border-radius:10px;">
 
 ---
 
@@ -54,7 +54,7 @@ This app allows users to capture video directly from an Android device and strea
 - Caller mode support  
 - Optional Stream ID and Passphrase  
 
-<img src="/images/preview_srt_settings.jpg" alt="SRT Settings" style="width:100%; border-radius:10px; margin:20px 0;">
+<img src="/images/projects/srt-streaming/srt-streaming-srt-config.jpg" alt="SRT Settings" style="width:100%; border-radius:10px; margin:20px 0;">
 
 ---
 
@@ -63,7 +63,7 @@ This app allows users to capture video directly from an Android device and strea
 - Live monitoring interface  
 - Camera switching & zoom support  
 
-<img src="/images/preview_control.jpg" alt="Streaming Control UI" style="width:100%; border-radius:10px; margin:20px 0;">
+<img src="/images/projects/srt-streaming/srt-streaming-live-view.jpg" alt="Streaming Control UI" style="width:100%; border-radius:10px; margin:20px 0;">
 
 ---
 
@@ -108,8 +108,7 @@ This application provides:
 ## 🖥 Interface Gallery
 
 <div style="display:flex; gap:10px; flex-wrap:wrap;">
-  <img src="/images/preview_video_settings.jpg" style="width:32%; border-radius:10px;">
-  <img src="/images/preview_audio_settings.jpg" style="width:32%; border-radius:10px;">
-  <img src="/images/preview_srt_settings.jpg" style="width:32%; border-radius:10px;">
+  <img src="/images/projects/srt-streaming/srt-streaming-video-settings.jpg" style="width:32%; border-radius:10px;">
+  <img src="/images/projects/srt-streaming/srt-streaming-audio-settings.jpg" style="width:32%; border-radius:10px;">
+  <img src="/images/projects/srt-streaming/srt-streaming-srt-config.jpg" style="width:32%; border-radius:10px;">
 </div>
-
