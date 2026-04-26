@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "# Abdul Fatah Amrulloh (Fatah)"
+title: "# Abdul Fatah Amrulloh"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
